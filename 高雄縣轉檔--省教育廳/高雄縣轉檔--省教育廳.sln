@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "高雄縣轉檔--省教育廳", "高雄縣轉檔--省教育廳\高雄縣轉檔--省教育廳.csproj", "{43C71D05-D2C3-46BD-9830-5C8BFCEC0422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "成德高中國中部轉檔", "成德高中國中部轉檔\成德高中國中部轉檔.csproj", "{20145E92-5BCD-407F-A5DD-B5871904EF7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "香山國中部轉檔(全訊)", "香山國中部(全訊)\香山國中部轉檔(全訊).csproj", "{229A1295-4AF6-4DB5-A973-FB5E874B1688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "高雄龍肚國中", "高雄龍肚國中\高雄龍肚國中.csproj", "{74888D4E-924C-4227-848D-44B8A9F1EE6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "香山高中部轉檔(全訊)", "香山高中部轉檔(全訊)\香山高中部轉檔(全訊).csproj", "{43C2087E-B69A-46AA-96EC-6D16B6E575C7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfserver:8080/tfs/tfs2008
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 高雄縣轉檔--省教育廳\\高雄縣轉檔--省教育廳.csproj
+		SccProjectName1 = 高雄縣轉檔--省教育廳
+		SccLocalPath1 = 高雄縣轉檔--省教育廳
+		SccProjectUniqueName2 = 成德高中國中部轉檔\\成德高中國中部轉檔.csproj
+		SccProjectName2 = 成德高中國中部轉檔
+		SccLocalPath2 = 成德高中國中部轉檔
+		SccProjectUniqueName3 = 香山國中部(全訊)\\香山國中部轉檔(全訊).csproj
+		SccProjectName3 = 香山國中部(全訊)
+		SccLocalPath3 = 香山國中部(全訊)
+		SccProjectUniqueName4 = 高雄龍肚國中\\高雄龍肚國中.csproj
+		SccProjectName4 = 高雄龍肚國中
+		SccLocalPath4 = 高雄龍肚國中
+		SccProjectUniqueName5 = 香山高中部轉檔(全訊)\\香山高中部轉檔(全訊).csproj
+		SccProjectName5 = 香山高中部轉檔(全訊)
+		SccLocalPath5 = 香山高中部轉檔(全訊)
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43C71D05-D2C3-46BD-9830-5C8BFCEC0422}.Debug|x86.ActiveCfg = Debug|x86
+		{43C71D05-D2C3-46BD-9830-5C8BFCEC0422}.Debug|x86.Build.0 = Debug|x86
+		{43C71D05-D2C3-46BD-9830-5C8BFCEC0422}.Release|x86.ActiveCfg = Release|x86
+		{43C71D05-D2C3-46BD-9830-5C8BFCEC0422}.Release|x86.Build.0 = Release|x86
+		{20145E92-5BCD-407F-A5DD-B5871904EF7B}.Debug|x86.ActiveCfg = Debug|x86
+		{20145E92-5BCD-407F-A5DD-B5871904EF7B}.Debug|x86.Build.0 = Debug|x86
+		{20145E92-5BCD-407F-A5DD-B5871904EF7B}.Release|x86.ActiveCfg = Release|x86
+		{20145E92-5BCD-407F-A5DD-B5871904EF7B}.Release|x86.Build.0 = Release|x86
+		{229A1295-4AF6-4DB5-A973-FB5E874B1688}.Debug|x86.ActiveCfg = Debug|x86
+		{229A1295-4AF6-4DB5-A973-FB5E874B1688}.Debug|x86.Build.0 = Debug|x86
+		{229A1295-4AF6-4DB5-A973-FB5E874B1688}.Release|x86.ActiveCfg = Release|x86
+		{229A1295-4AF6-4DB5-A973-FB5E874B1688}.Release|x86.Build.0 = Release|x86
+		{74888D4E-924C-4227-848D-44B8A9F1EE6C}.Debug|x86.ActiveCfg = Debug|x86
+		{74888D4E-924C-4227-848D-44B8A9F1EE6C}.Debug|x86.Build.0 = Debug|x86
+		{74888D4E-924C-4227-848D-44B8A9F1EE6C}.Release|x86.ActiveCfg = Release|x86
+		{74888D4E-924C-4227-848D-44B8A9F1EE6C}.Release|x86.Build.0 = Release|x86
+		{43C2087E-B69A-46AA-96EC-6D16B6E575C7}.Debug|x86.ActiveCfg = Debug|x86
+		{43C2087E-B69A-46AA-96EC-6D16B6E575C7}.Debug|x86.Build.0 = Debug|x86
+		{43C2087E-B69A-46AA-96EC-6D16B6E575C7}.Release|x86.ActiveCfg = Release|x86
+		{43C2087E-B69A-46AA-96EC-6D16B6E575C7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
