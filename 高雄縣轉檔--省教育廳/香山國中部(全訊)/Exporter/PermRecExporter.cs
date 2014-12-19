@@ -17,7 +17,7 @@ namespace 香山國中部_全訊_.Exporter
 
             FillStudentBasicInfo(wb);
 
-            // FillSemesterHistory(wb);
+             //FillSemesterHistory(wb);
             
             FillClasses(wb);
 
@@ -27,7 +27,7 @@ namespace 香山國中部_全訊_.Exporter
 
             FillUpdateRecords(wb);
 
-            FillIdentityRecords(wb);
+            //FillIdentityRecords(wb);
             
             //int rowIndexDomain = 1;
             //Worksheet wst2 = wb.Worksheets["學期領域成績"];
@@ -138,7 +138,7 @@ namespace 香山國中部_全訊_.Exporter
                         ws.Cells[rowIndex, 19].PutValue(uptInfo.ApproveDate);
                         ws.Cells[rowIndex, 20].PutValue(uptInfo.ApproveNo);
 
-                        if (!ConnectionHelper.IsJH)
+                    //    if (!ConnectionHelper.IsJH)
                             ws.Cells[rowIndex, 31].PutValue(uptInfo.UpdateType);
                         rowIndex += 1;
                     }  //end foreach

@@ -44,7 +44,10 @@
       <HintPath>Lib\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="DevComponents.DotNetBar2, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=9.5.0.1, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -136,6 +139,8 @@
   <ItemGroup>
     <Content Include="Lib\Aspose.Cells.dll" />
     <Content Include="Lib\Aspose.Cells.xml" />
+    <Content Include="Lib\DevComponents.DotNetBar2.dll" />
+    <Content Include="Lib\DevComponents.DotNetBar2.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

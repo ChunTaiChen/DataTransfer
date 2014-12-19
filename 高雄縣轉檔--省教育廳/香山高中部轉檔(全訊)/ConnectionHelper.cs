@@ -18,7 +18,8 @@ namespace 香山高中部轉檔_全訊_
         /// <returns></returns>
         public static OdbcConnection GetConnection1()
         {
-            string cn = GetCnString("csv1");
+//            string cn = GetCnString("csv1");
+            string cn = GetCnString("101");
             return new OdbcConnection(cn);
         }
 

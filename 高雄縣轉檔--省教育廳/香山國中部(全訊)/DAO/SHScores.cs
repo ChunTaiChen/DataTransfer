@@ -57,20 +57,21 @@ namespace 香山國中部_全訊_.DAO
                   if (ci != null) //解析課程成績
                 {
                       string[] credits = row["wt"].ToString().Split(new char[] { '/' });
-                      if (!string.IsNullOrWhiteSpace(row["u_mka"].ToString().Trim()))
-                      {
+                      //if (string.IsNullOrWhiteSpace(row["u_mka"].ToString().Trim()))
+                      //{
                           //a. 上學期
                           VO.SHSubjectSemesterScore subjSemScore = new VO.SHSubjectSemesterScore(row, "1");
                           subjSemScore.Credit = credits[0];
                           subjSemsScores.Add(subjSemScore);
-                      }
-                      if (!string.IsNullOrWhiteSpace(row["u_mkb"].ToString().Trim()))
-                      {
+                      //}
+                      //if (string.IsNullOrWhiteSpace(row["u_mkb"].ToString().Trim()))
+                      //{
                         //b. 下學期
-                        VO.SHSubjectSemesterScore subjSemScore = new VO.SHSubjectSemesterScore(row, "2");
-                        subjSemScore.Credit = credits[1];
-                        subjSemsScores.Add(subjSemScore);
-                      }                   
+                        VO.SHSubjectSemesterScore subjSemScore2 = new VO.SHSubjectSemesterScore(row, "2");
+                        if (credits.Length>1)
+                            subjSemScore2.Credit = credits[1];
+                        subjSemsScores.Add(subjSemScore2);
+                      //}                   
                     //c. 科目學年成績
                       VO.SHSubjectSemesterScore subjYearScore = new VO.SHSubjectSemesterScore(row, "0");
                       subjYearScores.Add(subjYearScore);

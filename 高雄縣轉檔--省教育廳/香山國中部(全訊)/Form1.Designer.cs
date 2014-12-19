@@ -48,7 +48,7 @@
             this.txtDataPath.Name = "txtDataPath";
             this.txtDataPath.Size = new System.Drawing.Size(425, 22);
             this.txtDataPath.TabIndex = 8;
-            this.txtDataPath.Text = "C:\\projects\\轉檔\\實驗中學_國小部";
+            this.txtDataPath.Text = "D:\\DB\\lchs";
             // 
             // labelX2
             // 

@@ -20,7 +20,10 @@ namespace 香山國中部_全訊_.DAO
 
             /* 上學期 */
             //string sql = "select * from dscorea";
-            string sql = "select s_no, year, tena1, tena2, zno11,zno21,zno31,zno41,zno51,zno61,zno71 from dscorea";
+            //string sql = "select s_no, year, tena1, tena2, zno11,zno21,zno31,zno41,zno51,zno61,zno71 from dscorea";
+
+            // 路竹處理導師評語 tena1, tena2
+            string sql = "select * from dscorea";
             OleDbDataAdapter adp = new OleDbDataAdapter(sql, cn);
             DataSet ds = new DataSet();
             adp.Fill(ds);
@@ -32,7 +35,9 @@ namespace 香山國中部_全訊_.DAO
             }
 
             /* 下學期 */
-            sql = "select s_no, year, tena1, tena2, zno11,zno21,zno31,zno41,zno51,zno61,zno71 from dscoreb";
+            // 路竹處理導師評語
+            // sql = "select s_no, year, tena1, tena2, zno11,zno21,zno31,zno41,zno51,zno61,zno71 from dscoreb";
+            sql = "select * from dscoreb";
             adp = new OleDbDataAdapter(sql, cn);
             ds = new DataSet();
             adp.Fill(ds);
@@ -46,6 +51,8 @@ namespace 香山國中部_全訊_.DAO
 
         public static  List<VO.DailyLifeScoreInfo> GetAllDailyLiftScores()
         {
+            if (lifeScores == null)
+                lifeScores = new List<VO.DailyLifeScoreInfo>();
             return lifeScores;
         }
     }

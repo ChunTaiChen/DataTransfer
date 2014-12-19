@@ -20,7 +20,7 @@ namespace 香山國中部_全訊_.DAO
             dicCodes = new Dictionary<string, string>();
 
             OleDbConnection cn = ConnectionHelper.GetConnection1();
-            string sql = "select * from edcode  ";
+            string sql = "select * from edcode";
 
             OleDbDataAdapter adp = new OleDbDataAdapter(sql, cn);
             DataSet ds = new DataSet();

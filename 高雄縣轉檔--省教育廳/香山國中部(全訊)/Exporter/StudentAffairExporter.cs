@@ -126,6 +126,7 @@ namespace 香山國中部_全訊_.Exporter
             int rowIndex = 1;
             List<VO.AbsenceInfo> records = DAO.Absence.GetAllAbsence();
 
+            if(records !=null)
             foreach (VO.AbsenceInfo abs in records)
             {
                 foreach (string period in abs.GetPeriods())  //每一節課都是一筆記錄
@@ -199,6 +200,7 @@ namespace 香山國中部_全訊_.Exporter
             int rowIndex = 1;
             List<VO.MeritInfo> records = DAO.Merits.GetAllMerits();
 
+            if(records !=null)
             foreach (VO.MeritInfo mi in records)
             {
                 VO.StudentInfo stud = DAO.Students.GetStudentByStudNo(mi.StudentNo);

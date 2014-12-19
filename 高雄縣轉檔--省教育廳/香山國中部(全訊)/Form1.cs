@@ -25,12 +25,12 @@ namespace 香山國中部_全訊_
             Exporter.PermRecExporter pre = new Exporter.PermRecExporter();
             pre.BeginExport();
 
-            //showMsg("====  3. export student affair  data ...  ====");
-            //Exporter.StudentAffairExporter studExp = new Exporter.StudentAffairExporter();
-            //studExp.BeginExport();
-            //studExp.ExportLifeScores();
+            showMsg("====  3. export student affair  data ...  ====");
+            Exporter.StudentAffairExporter studExp = new Exporter.StudentAffairExporter();
+            studExp.BeginExport();
+            studExp.ExportLifeScores();
             
-
+            /*
             //TODO : 準備匯出成績資料：
             if (ConnectionHelper.IsJH)
             {
@@ -43,7 +43,7 @@ namespace 香山國中部_全訊_
                 Exporter.SHScoreExporter scoreExp = new Exporter.SHScoreExporter();
                 scoreExp.BeginExportSH();
             }
-
+            */
             MessageBox.Show("Finish !");
         }
 
@@ -53,22 +53,28 @@ namespace 香山國中部_全訊_
 
             showMsg("=======. load EDCode data ...  ======");
             DAO.EDCode.Load();
+
+          
             showMsg("=======. load Class data ...  ======");
             DAO.Classes.Load();
             showMsg("=======. load Student data ...  ======");
             DAO.Students.Load();
             showMsg("=======. load Update Records data ...  ======");
             DAO.UpdateRecords.Load();
-            
+          
+
+
             //缺曠  //實中國小沒有缺況獎懲
-            //showMsg("=======. load Merit data ...  ======");
-            //DAO.Merits.Load();
+            showMsg("=======. load Merit data ...  ======");
+            DAO.Merits.Load();
             //showMsg("=======. load Absence data ...  ======");
-            //DAO.Absence.Load();
+            DAO.Absence.Load();
+
+            // 評語相關
             //showMsg("=======. load DailyLifeScore data ...  ======");
-            //DAO.DailyLifeScore.Load();
+            DAO.DailyLifeScore.Load();
             
-            
+            /*
             //成績            
             showMsg("=======. load Courses data ...  ======");
             DAO.Courses.Load();
@@ -79,6 +85,7 @@ namespace 香山國中部_全訊_
                 showMsg("=======. load SH Score data ...  ======");
                 DAO.SHScores.Load();
             }
+             */
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)

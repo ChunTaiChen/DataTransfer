@@ -39,6 +39,7 @@ namespace 香山國中部_全訊_.VO
                 string[] date_parts = date.Split(new char[] { '/' });
                 this.schoolyear = date_parts[0];
                 this.year = (string.IsNullOrWhiteSpace(this.schoolyear)) ? "" : (1911 + int.Parse(schoolyear)).ToString();
+                if(date_parts.Count()>2)
                 this.approve_date = string.Format("{0}/{1}/{2}", year, date_parts[1], date_parts[2]);
             }
         }

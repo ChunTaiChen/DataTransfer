@@ -21,8 +21,8 @@ namespace 香山國中部_全訊_.DAO
             string sql = "select * from stu.dbf where ( (year = '098') OR (year = '099') OR (year = '100') OR (year = '101') OR (year = '102') OR (year = '103') ) and ";
             /* 新竹實驗中學國高中都在同一個 DB 中, 所以部別代碼分開 */
             if (ConnectionHelper.IsJH) {
-                //sql += "  dept='102'";    //國中部為102
-                sql += "  dept='001'"; //實中國小部為 001
+                sql += "  dept='102'";    //國中部為102
+              // sql += "  dept='001'"; //實中國小部為 001
             }
             else
                 sql += " dept='101'";

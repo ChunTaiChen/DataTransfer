@@ -55,7 +55,9 @@ namespace 香山國中部_全訊_.VO
 
             /*  實中的欄位 */
             this.TeacherComment = (semester == "1" ? dr["tena1"].ToString().Trim() : dr["tena2"].ToString().Trim());
-
+            
+            // 路竹轉檔註解
+            /*
             this.Z1 = dr["zno11"].ToString();   //整潔習慣
             this.Z2 = dr["zno21"].ToString();   //禮節
             this.Z3 = dr["zno31"].ToString();   //生活秩序
@@ -63,6 +65,7 @@ namespace 香山國中部_全訊_.VO
             this.Z5 = dr["zno51"].ToString();   //公德心
             this.Z6 = dr["zno61"].ToString();   //友愛關懷
             this.Z7 = dr["zno71"].ToString();   //團隊合作
+             * */
         }
     }
 }
